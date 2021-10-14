@@ -30,3 +30,7 @@ If you connect using multiple users, separate them by semicolon like in example 
 conn_pairs["my_server"]="user@127.0.0.1"
 conn_pairs["my_server_multiple_users"]="user@127.0.0.1;resu@127.0.0.1"
 ```
+
+# TODO
+* Wayland version
+* AUR package
