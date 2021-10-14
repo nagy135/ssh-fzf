@@ -6,13 +6,12 @@ RED=$'\e[1;31m'
 BLUE=$'\e[1;34m'
 END=$'\e[0m'
 
-declare -A conn_pairs
-
 colorize(){
     echo "$1${END}" | sed "s/^/${RED}/ ; s/@/${END}@${YELLOW}/"
 }
-conn_pairs["my_server"]="user@127.0.0.1"
-conn_pairs["my_server_multiple_users"]="user@127.0.0.1;resu@127.0.0.1"
+
+directory="$(dirname "$(realpath "$0")")"
+source $directory/connections
 
 # dummy argument parsing
 [[ $1 == 'scp' ]] && SCP=1 || SCP=0

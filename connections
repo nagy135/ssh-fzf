@@ -1,0 +1,6 @@
+#!/bin/bash
+
+declare -A conn_pairs
+
+conn_pairs["my_server"]="user@127.0.0.1"
+conn_pairs["my_server_multiple_users"]="user@127.0.0.1;resu@127.0.0.1"
